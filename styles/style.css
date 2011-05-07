@@ -249,6 +249,7 @@ input[type=submit]:focus{
 }
 #home {
     text-align: left;
+    letter-spacing: -1.5px;
 }
 #mainNav{
   margin-top: 10px;
