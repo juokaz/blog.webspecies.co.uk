@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<div class="single hentry">
+<h2 class="entry-title">{{ page.tag }} tag</h2>
+</div>
+
+{% for post in site.tags[page.tag] limit:5 %}
+    {% include post.html %} 
+{% endfor %}

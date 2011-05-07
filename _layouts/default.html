@@ -1,0 +1,74 @@
+---
+name: Web Species blog
+---
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US"> 
+ 
+<head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+ 
+	<title>{% if page.title %}{{ page.title }} - {% endif %}{{ page.name }}</title>
+	
+    <meta name="description" content="Web Species Ltd provides bespoke software solutions, consulting and training services based on our open-source technologies expertise" />
+    <meta name="keywords" content="web species, web development, consulting, training, php" />
+    <meta name="author" content="Web Species Ltd" />
+	
+    <!--[if gte IE 7]><!--> 
+        <link rel="stylesheet" href="/styles/style.css" type="text/css" media="screen" charset="utf-8" /> 
+    <!-- <![endif]--> 
+
+    <!--[if IE 7]>
+        <link rel="stylesheet" href="/styles/style_ie.css" type="text/css" media="screen" charset="utf-8" />
+    <![endif]--> 
+    
+    <link rel="stylesheet" href="/styles/highlight.css" type="text/css" media="screen" charset="utf-8" /> 
+
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="alternate" type="application/atom+xml" title="{{ page.name }} Atom Feed" href="http://feeds.feedburner.com/WebSpeciesBlog" /> 
+    
+    <script type="text/javascript"><!--
+    // avoid being trapped inside a frame!
+    eval(function(p,a,c,k,e,r){e=String;if(!''.replace(/^/,String)){while(c--)r[c]=k[c]||c;k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('3(5!=1){3(6.7)1.0.8(4.0.2);9 1.0.2=4.0.2}',10,10,'location|top|href|if|window|self|document|images|replace|else'.split('|'),0,{}))
+    // --></script> 
+</head> 
+ 
+<body class="home blog"> 
+ 
+<div id="siteWrapper"> 
+    <a href="http://webspecies.co.uk/" id="logo"></a>
+ 
+    <h1 id="home"><a href="/" title="Home" class="fn">{{ page.name }}</a></h1> 
+      
+    <div id="siteDescription"> 
+        As you might know from our <a href="http://webspecies.co.uk">website</a> we work with a lot of different technologies, tools and projects. <br />
+        It only makes sense for us to share our experiences to help others build things faster and better.
+    </div> 
+ 
+    <div id="coreContent"> 
+        {{ content }}
+    </div> 
+ </div> 
+ 
+<div id="footer">
+    <div class="footerContent"> 
+        <p class="copyright">&copy; <a href="http://webspecies.co.uk/">Web Species Ltd</a>.</p> 
+        <p class="license"><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" alt="Creative Commons License" /></a> 
+    	Except where otherwise noted, content on this site is<br /> 
+	    licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" >Creative Commons Share Alike 3.0 License</a></p>
+    </div>
+</div> 
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21529043-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body> 
+</html>

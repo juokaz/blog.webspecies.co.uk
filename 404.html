@@ -1,0 +1,26 @@
+---
+layout: default
+title: Page Not Found
+---
+
+<div class="post single hentry"> 
+    <div class="postContent"> 
+        <h2 class="entry-title">404 - Page Not Found</h2> 
+        <div class="entry-content"> 
+            <p>Unfortunately the content you're looking for isn't here. There may be a misspelling in your web address or you may have clicked a link for content that no longer exists. Perhaps you would be interested in our most recent articles.</p> 
+        </div> 
+    </div> 
+
+    <h4>Recent Articles</h4> 
+
+    <ul id="recentPosts"> 
+
+    {% for post in site.posts limit 5 %}
+        <li> 
+            <a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a> 
+            <div class="postDate"><abbr class="published" title="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</abbr></div> 
+        </li> 
+    {% endfor %}
+	       
+    </ul> 
+</div> 

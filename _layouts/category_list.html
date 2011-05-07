@@ -1,0 +1,22 @@
+---
+layout: default
+title: Categories
+---
+
+<div id="archives" class="single hentry">
+<h2 class="entry-title">Categories</h2>
+     
+{% for category in page.categories %}
+<h3><a href="/categories/{{ category | replace:' ', '-' | downcase  }}.html">{{ category }}</a></h3>
+	    
+<ul id="recentPosts">
+    {% for post in site.categories[category] limit 10 %}
+    <li>
+        <a href="{{post.url}}">{{ post.title }}</a>
+        <div class="postDate"><abbr class="published" title="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</abbr></div>
+    </li>
+    {% endfor %}
+</ul>
+{% endfor %}
+
+</div>
