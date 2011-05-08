@@ -423,6 +423,12 @@ input[type=submit]:focus{
 #coreContent .postMeta span{
   text-transform: uppercase;
 }
+#coreContent .postMeta .author{
+  float: left;
+}
+#coreContent .postMeta .meta{
+  float: right;
+}
 .entry-content h1,
 .entry-content h2,
 .entry-content h3,
