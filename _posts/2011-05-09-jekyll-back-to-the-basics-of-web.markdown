@@ -21,7 +21,7 @@ Well, it generates HTML pages, so it makes a secure website (you can’t really 
 
 HTML pages bring another advantage of being crazy fast. PHP for example is fast enough for most of the stuff, but still falls behind static pages, for obvious reasons. I like fast responding websites and the only limit I want to have is how fast my internet connection is. This blog is being served by Nginx, an awesome tool by itself, and load times are pretty much instant.
 
-I have started my carrier by creating HTML websites years ago and still can do it very quickly. Once I have received a HTML code from my designer I don’t need to wrap it around Joomla or Wordpress specific template structure - with Jekyll it can be used as it is. Makes it ideal for creating websites fast and because there aren’t billion templates, views and partials to juggle with, fixing bugs in markup is child’s play.
+I have started my career by creating HTML websites years ago and still can do it very quickly. Once I have received a HTML code from my designer I don’t need to wrap it around Joomla or Wordpress specific template structure - with Jekyll it can be used as it is. Makes it ideal for creating websites fast and because there aren’t billion templates, views and partials to juggle with, fixing bugs in markup is child’s play.
 
 ### Disadvantages
 
@@ -29,7 +29,7 @@ I have started my carrier by creating HTML websites years ago and still can do i
 
 Static pages are static, thus requiring some workarounds for your usual dynamic parts. Contact forms cannot be implemented as there is no handler for handling the POST data. Luckily there are services like [Wufoo](http://wufoo.com/) which work for most of the tasks, but require more fiddling that just creating a PHP handler. Same is for comments, ratings etc. anything requiring to store data.
 
-There is no online interface for editing so it won’t work well for clients' websites. I can image hacks which would make it somewhat possible, but let’s leave them out. This is not an issue for me as there is no need to edit anything on this blog once it’s deployed (I can redeploy in a matter of seconds anyway), however clients will need this feature. Thus rendering Jekyll usable only for your own projects or limited-editing websites.
+There is no online interface for editing so it won’t work well for clients' websites. I can imagine hacks which would make it somewhat possible, but let’s leave them out. This is not an issue for me as there is no need to edit anything on this blog once it’s deployed (I can redeploy in a matter of seconds anyway), however clients will need this feature. Thus rendering Jekyll usable only for your own projects or limited-editing websites.
 
 That’s pretty much it. Well, at least for me. If none of that sound like a big show stopper, I suggest you try it out.
 
