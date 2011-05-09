@@ -513,6 +513,9 @@ input[type=submit]:focus{
   margin: 0 auto;
   border: 1px solid #ccc;
 }
+.hentry img.noborder {
+  border: 0;
+}
 .share a{
   display: inline-block;
   padding: 2px 0 2px 19px;
