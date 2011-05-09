@@ -56,7 +56,7 @@ I use Markdown for most of the content, but it supports a bunch more and obvious
 Next time you are considering building a not complicated website or a blog give a look at Jekyll. It worked great for us and I’m very happy with flexibility and lightness of it. It’s also very easy to start with and potentially Liquid templates can be later migrated to other frameworks (Liquid is for example very close to [Twig](http://www.twig-project.org/)).
 
 P.S.  
-**Source code of this blog is actually opensourced** too and available [here](github.com/webspecies/blog.webspecies.co.uk/), so feel free to hack with it. You can do this:
+**Source code of this blog is actually opensourced** too and available [here](http://github.com/webspecies/blog.webspecies.co.uk/), so feel free to hack with it. You can do this:
 
 {% highlight bash %}
 git clone git@github.com:webspecies/blog.webspecies.co.uk.git
