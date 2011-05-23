@@ -428,6 +428,7 @@ input[type=submit]:focus{
 }
 #coreContent .postMeta .meta{
   float: right;
+  width: 300px;
 }
 .entry-content h1,
 .entry-content h2,
