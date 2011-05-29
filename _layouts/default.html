@@ -9,8 +9,8 @@ name: Web Species blog
  
 	<title>{% if page.title %}{{ page.title }} - {% endif %}{{ page.name }}</title>
 	
-    <meta name="description" content="Web Species Ltd provides bespoke software solutions, consulting and training services based on our open-source technologies expertise" />
-    <meta name="keywords" content="web species, web development, consulting, training, php" />
+    <meta name="description" content="{% if page.id %}{{ page.content | description }}{% else %}Web Species Ltd provides bespoke software solutions, consulting and training services based on our open-source technologies expertise{% endif %}" />
+    <meta name="keywords" content="{% if page.tags %}{{ page.tags | array_to_sentence_string }}{% else %}web species, web development, consulting, training, php{% endif %}" />
     <meta name="author" content="Web Species Ltd" />
 	
     <!--[if gte IE 7]><!--> 
