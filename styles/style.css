@@ -565,9 +565,18 @@ input[type=submit]:focus{
 #coreContent .single .social{
   font-size: 1.4em;
   text-align: left;
+  border-top: 1px solid #EFEFEF;
+  padding-top: 10px;
 }
 #coreContent .single .rss{
   vertical-align: middle;
+}
+#coreContent .single .rsssubcribe{
+  float: left;
+  margin-right: 15px;
+}
+#coreContent .single .share{
+  float: right;
 }
 
 /* Links Page
