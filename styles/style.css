@@ -429,6 +429,13 @@ input[type=submit]:focus{
   float: right;
   width: 300px;
 }
+#coreContent .postMeta:after{
+  content: "."; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden;
+}
 .entry-content h1,
 .entry-content h2,
 .entry-content h3,
@@ -554,6 +561,13 @@ input[type=submit]:focus{
   padding-top: 0;
   padding-bottom: 17px;
   text-align: left;
+}
+#coreContent .single .social{
+  font-size: 1.4em;
+  text-align: left;
+}
+#coreContent .single .rss{
+  vertical-align: middle;
 }
 
 /* Links Page
