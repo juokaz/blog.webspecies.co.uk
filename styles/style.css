@@ -141,7 +141,7 @@ h2{
 }
 h3{
   margin-bottom: 5px;
-  font-size: 3em;
+  font-size: 3.3em;
   font-weight: normal;
 }
 h3 a:link,
@@ -459,7 +459,7 @@ input[type=submit]:focus{
   font-size: 2em;
 }
 .entry-content h3{
-  font-size: 1.9em;
+  font-size: 2.2em;
 }
 .entry-content h4,
 .entry-content h5,
