@@ -93,7 +93,7 @@ html {
 }
 body{
   font: 62.5% palatino, "times new roman", serif;
-  font-family: Georgia, Times, serif;
+  font-family: 'Droid Serif', Georgia, Times, serif;
   color: #333;
 }
 strong{
