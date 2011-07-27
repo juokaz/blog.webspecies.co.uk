@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Web Scrapping is actually pretty easy
+title: Web Scraping is actually pretty easy
 author: Juozas
 email: juozas@juokaz.com
 date: 2011-07-27 16:15:00
-tags: [webspecies, sellerscout, web scrapping, python, php]
+tags: [webspecies, sellerscout, web sraping, python, php]
 categories:
 - Python
 - PHP
-- Web scrapping
+- Web scraping
 ---
 
-For some of our clients we worked on extracting or submitting data automatically from websites which didn't have an API we could use. This and more is called web scrapping. Since our announcement of [SellerScout](http://sellerscout.co.uk/), which relies heavily on this, I received a list of questions how we actually do this. So here are some thoughts on how to get started in the interesting web scrapping world.
+For some of our clients we worked on extracting or submitting data automatically from websites which didn't have an API we could use. This and more is called web scraping. Since our announcement of [SellerScout](http://sellerscout.co.uk/), which relies heavily on this, I received a list of questions how we actually do this. So here are some thoughts on how to get started in the interesting web scraping world.
 
 <!--more-->
 
@@ -19,13 +19,13 @@ This article talks about some basics, which will work fine for most cases. This 
 
 ### Downloading the web
 
-<div class="alignright" ><img src="/media/scraper.jpg" alt="Scraper" class="noborder"><p class="wp-caption-text">It's all just scrapping</p></div>
+<div class="alignright" ><img src="/media/scraper.jpg" alt="Scraper" class="noborder"><p class="wp-caption-text">It's all just scraping</p></div>
 
 [Spiders](http://en.wikipedia.org/wiki/Web_crawler) are the small applications you are going to be writing. Usually they are self-contained and CLI-friendly scripts, which have some internal logic how to extract information from a specific website or websites. As an example, the script might go to website's homepage, download all the category pages, download products list for each of them and extract a list of products in the store.
 
 If you are a Python guy, you might want to look at [Twisted](http://twistedmatrix.com/trac/) or [Scrapy](http://scrapy.org/), later being very easy to use. If it's PHP you are using, combination of cURL and libxml will allow doing the same; I'm not aware of any PHP frameworks for this. For any other language, you should give a look at Google. 
 
-Depending on your task you will need to support different functionality. If the website is for logged in users only, you should configure [cURL](http://php.net/manual/en/book.curl.php) to use cookies jar and initialize the scrapping with a request to login page. If you need to extract thousands of documents, have some logic to pause and resume the script, so if it crashes it can start from the last completed document rather than from the start. In any case, try to replicate the natural user behaviour on the site.
+Depending on your task you will need to support different functionality. If the website is for logged in users only, you should configure [cURL](http://php.net/manual/en/book.curl.php) to use cookies jar and initialize the scraping with a request to login page. If you need to extract thousands of documents, have some logic to pause and resume the script, so if it crashes it can start from the last completed document rather than from the start. In any case, try to replicate the natural user behaviour on the site.
 
 Is it [legal](http://en.wikipedia.org/wiki/Web_scraping#Legal_issues)? Depends. There is no strict answer and it varies on what data you are trying to extract. Some data can be copyrighted, for example original texts, so if you are scraping them and showing in your website - you are being a bad person. Stop! Ideally you should discuss this with your lawyer, which we did, and get some thoughts on how to proceed. 
 
@@ -55,4 +55,4 @@ Now let's get back to regular expressions. Theoretically they might look awesome
 
 ### Conclusion
 
-We, as a company, have a lot of experience web scrapping the data and it's actually very very easy. As long as you follow the logical rules and don't try to over-complicate the data extraction, you could easily extract all news items, products or blog posts in 30 or so code lines of spider. I can talk on this for hours or days, so I might write more on this soon, because this is just a top of an iceberg. 
+We, as a company, have a lot of experience web scraping the data and it's actually very very easy. As long as you follow the logical rules and don't try to over-complicate the data extraction, you could easily extract all news items, products or blog posts in 30 or so code lines of spider. I can talk on this for hours or days, so I might write more on this soon, because this is just a top of an iceberg. 
