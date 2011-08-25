@@ -10,7 +10,7 @@ categories:
 - Security
 ---
 
-Data validation sounds like an obvious thing and it appears that everyone is doing it, but here are some ideas on where you might be doing it wrong. 
+Data validation sounds like an obvious thing and it appears that everyone is doing it, but here are some ideas on where you might be doing it wrong. It's not a practical examples article, I'd assume the are pretty easy to figure out, this is more about implications and causes of various different validation errors. All of them are where we had suffered before, so make sure not to repeat the same mistakes.
 
 <!--more-->
 
@@ -22,7 +22,7 @@ This post is not about security, although security is probably one of the most i
 
 If you expect an integer, check if it's an integer. If you expect a date, check if it's date. It doesn't matter if it is an admin interface and "only ourselves will be using it, so we will be always entering valid data". This is not [phpMyAdmin](http://www.phpmyadmin.net/home_page/index.php) you are building (even that is actually validating what you have entered before storing in a database), making sure there is no way to mess up the database from any app will save you time. And gray hair.
 
-More than once have I seen the cases of applications not checking what they are accepting as a price of a product and then failing to render any successive screens because math operations on it are invalid. It's especially bad when users can't fix it themselves and need to contact you, the developer, to handle that from the other end. If I enter 1'000'000'000 to stock quantity make sure the whole app doesn't explode trying to insert so many rows in a database. 
+More than once have I seen the cases of applications not checking what they are accepting as a price of a product and then failing to render any successive screens because math operations on it are invalid. It's especially bad when users can't fix it themselves and need to contact you, the developer, to handle that from the other end. If I enter *1'000'000'000* to stock quantity make sure the whole app doesn't explode trying to insert so many rows in a database. 
 
 ### Make assumptions
 
