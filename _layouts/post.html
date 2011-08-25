@@ -46,14 +46,14 @@ layout: default
         <div class="share">
             <a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="webspecies" data-related="juokaz">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
             
+            <g:plusone size="tall"></g:plusone>
+            
+            <iframe src="http://www.facebook.com/plugins/like.php?href={{ "http://blog.webspecies.co.uk" | cgi_escape }}{{ page.url | cgi_escape }}&amp;send=false&amp;layout=box_count&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=90" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:50px; height:60px;" allowTransparency="true"></iframe>
+            
             <script type="text/javascript"> 
                 var dzone_url = 'http://blog.webspecies.co.uk{{ page.url }}', dzone_title = '{{ page.title }}', dzone_style = '1';
             </script>
             <script language="javascript" src="http://widgets.dzone.com/widgets/zoneit.js"></script>
-            
-            <iframe src="http://www.facebook.com/plugins/like.php?href={{ "http://blog.webspecies.co.uk" | cgi_escape }}{{ page.url | cgi_escape }}&amp;send=false&amp;layout=box_count&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=90" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:50px; height:60px;" allowTransparency="true"></iframe>
-            
-            <script type="text/javascript" src="http://www.reddit.com/static/button/button2.js"></script>
         </div>
     </div>
 </div> 
@@ -61,6 +61,15 @@ layout: default
 <div id="comments">
 
 <div id="disqus_thread"></div>
+
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
 <script type="text/javascript">
     var disqus_shortname = 'webspeciesblog';
     var disqus_identifier = '{{ page.id }}';
