@@ -37,7 +37,7 @@ Programming, I believe, is about logic. So don't be an *idiot* and use some of i
 * Product price larger than 0, smaller than 1000
 * Person's age is between 0 and 150
 * Stock quantity is between 0 and 50
-* Order cannot have date in the feature
+* Order cannot have date in the future
 * Etc.
 
 Obviously it depends on the application you are building and these might change, but most likely they won't and allowing arbitrary data to be entered can create huge problems. This is better than the [Blacklist](http://en.wikipedia.org/wiki/Blacklist) approach which is not really pratical, as it requires specifying what your data **can't be** rather what it **can only be**.
