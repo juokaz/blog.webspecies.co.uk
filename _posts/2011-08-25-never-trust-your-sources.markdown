@@ -48,7 +48,7 @@ This one is so easy to check it's not even funny when your data imports go wrong
 
 For tabular data it's very easy to check tables' headers – the amount of them and their labels. The order can change, you can figure out how to handle this, but if some fields are missing it is indicating that possibly the actual data can be mixed up to. XML might be trickier to check as it has nested structures, but one could use validation against a [DTD](http://en.wikipedia.org/wiki/Document_Type_Definition). If additional price element is added the code might still work, but the code doesn't know if it's using the right one anymore. 
 
-As with many
+There are cases when you might *not know* all possible data formats, like what I noticed recently when importing some data from Amazon reports. Everything seemed fine when we were testing, but once we launched some products were reporting with wrong quantities. The type field, which we stupidly ignored because it allways showed *'Sellable'* can also be different and when it's different you should act different. Obviously because we ignored it the data we imported didn't make sense - what we should have done is validate the data and have our assumption about type field in place, this could have notified us about some unseed format.
 
 ### Encoding
 
