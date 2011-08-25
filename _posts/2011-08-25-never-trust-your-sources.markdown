@@ -10,7 +10,7 @@ categories:
 - Security
 ---
 
-Data validation sounds like an obvious thing and it appears that everyone is doing it, but here are some ideas on where you might be doing it wrong. It's not a practical examples article, I'd assume the are pretty easy to figure out, this is more about implications and causes of various different validation errors. All of them are where we had suffered before, so make sure not to repeat the same mistakes.
+Data validation sounds like an obvious thing and it appears that everyone is doing it, but here are some ideas on where you might be doing it wrong. It's not a practical examples article, I'd assume they are pretty easy to figure out; this is more about implications and causes of various different validation errors. All of them are where we had suffered before, so make sure not to repeat the same mistakes.
 
 <!--more-->
 
@@ -20,7 +20,7 @@ This post is not about security, although security is probably one of the most i
 
 <div class="alignright" ><img src="/media/rules.gif" alt="Rules" class="noborder"></div>
 
-If you expect an integer, check if it's an integer. If you expect a date, check if it's date. It doesn't matter if it is an admin interface and "only ourselves will be using it, so we will be always entering valid data". This is not [phpMyAdmin](http://www.phpmyadmin.net/home_page/index.php) you are building (even that is actually validating what you have entered before storing in a database), making sure there is no way to mess up the database from any app will save you time. And gray hair.
+If you expect an integer, check if it's an integer. If you expect a date, check if it's date. It doesn't matter if it is an admin interface and "only ourselves will be using it, so we will be always entering valid data". This is not [phpMyAdmin](http://www.phpmyadmin.net/home_page/index.php) you are building (even that is actually validating what you have entered before storing in a database), making sure there is no way to mess up the database from any app will save you time. And grey hair.
 
 More than once have I seen the cases of applications not checking what they are accepting as a price of a product and then failing to render any successive screens because math operations on it are invalid. It's especially bad when users can't fix it themselves and need to contact you, the developer, to handle that from the other end. If I enter *1'000'000'000* to stock quantity make sure the whole app doesn't explode trying to insert so many rows in a database. 
 
@@ -38,17 +38,17 @@ Programming, I believe, is about logic. So don't be an idiot and use some of it.
 
 Obviously it depends on application you are building and these might change, but most likely they won't and allowing arbitrary data to be entered can create huge problems. 
 
-If you are importing data from an external source, does it make sense for the result to be empty? If it's a list of events it cannot be empty, unless the whole thing got canceled. So discard such import and log that you got 0 events, and you expected at least a dozen… do not delete all events from your database. That is – do not trust the source 100%, use your, or code's, head too. 
+If you are importing data from an external source, does it make sense for the result to be empty? If it's a list of events it cannot be empty, unless the whole thing got cancelled. So discard such import and log that you got 0 events, and you expected at least a dozen… do not delete all events from your database. That is – do not trust the source 100%, use your, or code's, head too. 
 
 ### Structure
 
 <div class="alignleft" ><img src="/media/structure.png" alt="Structure" class="noborder"></div>
 
-This one is so easy to check it's not even funny when your data imports go wrong.  It can be an Excel spreadsheet, some custom format or XML serialized data. All of those have structure, which you should be able to rely on. Personally, if data format changes, I make sure that my code would just stop processing it immediately, because it doesn't know any more what any of it means.
+This one is so easy to check it's not even funny when your data imports go wrong.  It can be an Excel spread sheet, some custom format or XML serialized data. All of those have structure, which you should be able to rely on. Personally, if data format changes, I make sure that my code would just stop processing it immediately, because it doesn't know any more what any of it means.
 
 For tabular data it's very easy to check tables' headers – the amount of them and their labels. The order can change, you can figure out how to handle this, but if some fields are missing it is indicating that possibly the actual data can be mixed up to. XML might be trickier to check as it has nested structures, but one could use validation against a [DTD](http://en.wikipedia.org/wiki/Document_Type_Definition). If additional price element is added the code might still work, but the code doesn't know if it's using the right one anymore. 
 
-There are cases when you might *not know* all possible data formats, like what I noticed recently when importing some data from Amazon reports. Everything seemed fine when we were testing, but once we launched some products were reporting with wrong quantities. The type field, which we stupidly ignored because it allways showed *'Sellable'* can also be different and when it's different you should act different. Obviously because we ignored it the data we imported didn't make sense - what we should have done is validate the data and have our assumption about type field in place, this could have notified us about some unseed format.
+There are cases when you might *not know* all possible data formats, like what I noticed recently when importing some data from Amazon reports. Everything seemed fine when we were testing, but once we launched some products were reporting with wrong quantities. The type field, which we stupidly ignored because it always showed *'Sellable'* can also be different and when it's different you should act different. Obviously because we ignored it the data we imported didn't make sense - what we should have done is validate the data and have our assumption about type field in place, this could have notified us about some unseen format.
 
 ### Encoding
 
