@@ -10,7 +10,7 @@ categories:
 - Tools
 ---
 
-Rarely a project lives by itself, especially in the days of frameworks. Furthermore, there is a lot of great open source libraries you might want to use to save time. But all of this raises a new problem - how could we manage all those dependencies. Here are some thoughts on this problem and how you might want to solve it; without shooting yourself in a foot. Which is commonly known as [DLL Hell](http://en.wikipedia.org/wiki/DLL_Hell).
+Rarely a project lives by itself, especially in the days of frameworks. Furthermore, there are a lot of great open source libraries you might want to use to save time. But all of this raises a new problem - how could we manage all those dependencies. Here are some thoughts on this problem and how you might want to solve it; without shooting yourself in a foot. Which is commonly known as [DLL Hell](http://en.wikipedia.org/wiki/DLL_Hell).
  
 <!--more-->
 
@@ -24,7 +24,7 @@ The most popular one couple years ago was [svn:externals](http://svnbook.red-bea
 
 If you are fine with the above, I think you should be quite quickly annoyed by the fact that those sub-folders you are automatically populating are in fact full checkouts by themselves, thus not read-only. Which potentially is a very risky design characteristic, because most of the time you aren't supposed to commit from those checkouts, even if you have changed something there.   
 
-Git users might be disappointed to know that submodules do not support partial checkouts, that is you can only checkout full repositories. This works fine most of the times, but quite often you'd like to checkout a sub-folder of the repository (for example only library folder from Zend Framework). There is a solution for that called [subtree merge](http://progit.org/book/ch6-7.html), but I find it way too complicated for my liking and only have used a handful of times. 
+Git users might be disappointed to know that submodules do not support partial checkouts, that is you can only checkout full repositories. This works fine most of the times, but quite often you'd like to checkout a sub-folder of the repository (for example only library folder from Zend Framework). There is a solution for that called [subtree merge](http://progit.org/book/ch6-7.html), but I find it way too complicated for my liking and I only have used it a handful of times. 
 
 ### How far you want to go
 
@@ -40,9 +40,9 @@ As you can see depending on what sort of external code you are trying pull in th
 
 <div class="alignright" ><img src="/media/tools.jpg" alt="Tools" class="noborder"></div>
 
-One of the best known tools is [Apache Maven](http://maven.apache.org/), especially if you had Java experience. It does everything you'd want from a dependency manager and probably more, but having used it for couple projects I think it's overcomplicating what I would need for our projects. Maybe because I haven't worked on projects complicated enough, but more likely because I just don't find tools like this attractive and valuable. 
+One of the best known tools is [Apache Maven](http://maven.apache.org/), especially if you have Java experience. It does everything you'd want from a dependency manager and probably more, but having used it for couple projects I think it's overcomplicating what I would need for our projects. Maybe because I haven't worked on projects complicated enough, but more likely because I just don't find tools like this attractive and valuable. 
 
-You might also want to use [PEAR](http://pear.php.net/index.php) for dependencies management, although it requires external libraries to be stored in PEAR repositories. Similarly there is the [composer](http://github.com/composer/composer) project which tries to solve a lot of dependencies problems and can resolve them from various different sources, but it seems to be still in development and I haven't played with it enough. I think composer might be the one to watch.
+You might also want to use [PEAR](http://pear.php.net/index.php) for dependencies management, although it requires external libraries to be stored in PEAR repositories. Similarly there is the [composer](http://github.com/composer/composer) project which tries to solve a lot of dependencies problems and can resolve them from various different sources, but it still seems to be in development and I haven't played with it enough. I think composer might be the one to watch.
 
 Symfony2 has an interesting approach of just having a [deps](https://github.com/symfony/symfony-standard/blob/master/deps) file which is used to define where all the dependencies are and where to place them. Think of it as a very light build recipe. Following a similar approach I have extended it and added support for different repository types and sub-repository checkouts. One script `./bin/vendors install` to run looks great to me.
 
