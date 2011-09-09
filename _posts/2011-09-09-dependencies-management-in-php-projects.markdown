@@ -26,6 +26,10 @@ If you are fine with the above, I think you should be quite quickly annoyed by t
 
 Git users might be disappointed to know that submodules do not support partial checkouts, that is you can only checkout full repositories. This works fine most of the times, but quite often you'd like to checkout a sub-folder of the repository (for example only library folder from Zend Framework). There is a solution for that called [subtree merge](http://progit.org/book/ch6-7.html), but I find it way too complicated for my liking and only have used a handful of times. 
 
+### How far you want to go
+
+
+
 ### Tools made for this
 
 <div class="alignright" ><img src="/media/tools.jpg" alt="Tools" class="noborder"></div>
