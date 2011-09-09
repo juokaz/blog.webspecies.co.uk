@@ -10,7 +10,7 @@ categories:
 - Tools
 ---
 
-Rarely a project lives by itself, especially in days of frameworks. Furthermore, there is a lot of great open source libraries you might want to use to save time. But all of this raises a problem - how to manage all those dependencies. Here are some thoughts on this problem and how you might want to solve it; without shooting yourself in a foot. 
+Rarely a project lives by itself, especially in the days of frameworks. Furthermore, there is a lot of great open source libraries you might want to use to save time. But all of this raises a problem - how to manage all those dependencies. Here are some thoughts on this problem and how you might want to solve it; without shooting yourself in a foot. 
  
 <!--more-->
 
