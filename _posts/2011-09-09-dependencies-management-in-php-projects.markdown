@@ -28,6 +28,8 @@ Git users might be disappointed to know that submodules do not support partial c
 
 ### How far you want to go
 
+<div class="alignright" ><img src="/media/space.gif" alt="Space" class="noborder"></div>
+
 The most obvious use of external dependencies is to get a copy of the framework you are using. This is quite a simple task because it can even be solved by just downloading a copy of the framework and sticking it in the project folder. Easy enough to manage, although not ideal. If you have less than say 5 of such dependencies then any way you choose to manage them is going to be fine. As long as they don't have dependencies themselves... 
 
 Dependencies actually are much more complicated than that. If you are using truly componentized libraries, those by themselves are going to have some dependencies. This introduces the [transitive dependencies](http://en.wikipedia.org/wiki/Transitive_dependency) problem which you can't easily solve. This is not such a big deal for PHP projects, because the biggest place where such libraries exist is PEAR.net and the tools there will help you with that. Anyhow, keep this in mind.
