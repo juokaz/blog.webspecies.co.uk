@@ -28,7 +28,11 @@ Git users might be disappointed to know that submodules do not support partial c
 
 ### How far you want to go
 
+The most obvious use of external dependencies is to get a copy of the framework you are using. This is quite a simple task because it can even be solved by just downloading a copy of the framework and sticking it in the project folder. Easy enough to manage, although not ideal. If you have less than say 5 of such dependencies then any way you choose to manage them is going to be fine. As long as they don't have dependencies themselves... 
 
+Dependencies actually are much more complicated than that. If you are using truly componentized libraries, those by themselves are going to have some dependencies. This introduces the [transitive dependencies](http://en.wikipedia.org/wiki/Transitive_dependency) problem which you can't easily solve. This is not such a big deal for PHP projects, because the biggest place where such libraries exist is PEAR.net and the tools there will help you with that. Anyhow, keep this in mind.
+
+As you can see depending on what sort of external code you are trying pull in there are different problems attached to it. From my experience simple management of the dependencies is enough, because I'm yet to see a big number of libraries having clearly defined dependencies. So unless this changes soon, I just use the simplest tools available. 
 
 ### Tools made for this
 
@@ -52,4 +56,4 @@ Furthermore, a library can go away completely. If it's hosted in a obscure small
 
 ### Conclusion
 
-One way or another you will have to solve this problem. I'd say the easiest way to start with and have some room to grow is to integrate this with you build scripts, even as a simple bash script. Just make sure you know what version you want to depend on and have some safety nets against disappearing sources.
+One way or another you will have to solve this problem. I'd say the easiest way to start with and have some room to grow is to integrate this with you build scripts, even as a simple bash script. Don't try to reinvent the wheel if you need something more sophisticated - there exists working tools already, so just give some of them a go. Just make sure you know what version you want to depend on and have some safety nets against disappearing sources.
