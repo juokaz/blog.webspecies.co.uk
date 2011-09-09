@@ -10,11 +10,11 @@ categories:
 - Tools
 ---
 
-Rarely a project lives by itself, especially in the days of frameworks. Furthermore, there is a lot of great open source libraries you might want to use to save time. But all of this raises a problem - how to manage all those dependencies. Here are some thoughts on this problem and how you might want to solve it; without shooting yourself in a foot. 
+Rarely a project lives by itself, especially in the days of frameworks. Furthermore, there is a lot of great open source libraries you might want to use to save time. But all of this raises a new problem - how could we manage all those dependencies. Here are some thoughts on this problem and how you might want to solve it; without shooting yourself in a foot. Which is commonly known as [DLL Hell](http://en.wikipedia.org/wiki/DLL_Hell).
  
 <!--more-->
 
-Version control systems are not made for managing dependencies.  Period. They can be made to do so, but sooner or later they are going to fail at doing that. This is a fact and there is no way avoiding it, if you don't trust me on this here are some proofs why.
+Usually SVN or Git integrated external references management tools are used for this. But... Version control systems are not made for managing dependencies.  Period. They can be made to do so, but sooner or later they are going to fail at doing that. This is a fact and there is no way avoiding it, if you don't trust me on this here are some proofs why.
 
 ### Version control systems
 
