@@ -18,7 +18,7 @@ Version control systems are not made for managing dependencies.  Period. They ca
 
 ### Version control systems
 
-<div class="alignright" ><img src="/media/wrongway.gif" alt="Wrong way" class="noborder"></div>
+<div class="alignright" ><img src="/media/stop.gif" alt="Stop" class="noborder"></div>
 
 The most popular one couple years ago was [svn:externals](http://svnbook.red-bean.com/en/1.0/ch07s03.html) for SVN, which is quite similar to [git submodule](http://kernel.org/pub/software/scm/git/docs/git-submodule.html) for GIT. First of all the obvious problem exist that they both only support referencing repositories of the same type, that is you can't include a Git dependency in a SVN project. Which today is a very problematic thing because you might still be using SVN, although not sure why you would be doing so, but a lot of the open source projects have moved on to GitHub. 
 
