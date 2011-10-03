@@ -31,9 +31,9 @@ What is most important, I find Microsoft's approach and tooling lacking in so ma
 
 <div class="alignleft" ><img src="/media/ohgodno.jpg" alt="Oh God no" class="noborder"></div>
 
-Not a bit surprise that Azure is running on top of Windows, it's a Microsoft cloud at the end of a day. I know a lot of PHP developers feel very negative about Microsoft and Windows specifically. No, Internet Explorer 6 specifically, but Windows is not better either. But that is something what you would care if this was an infrastructure service.
+It's not a big surprise that Azure is running on top of Windows, it's a Microsoft cloud at the end of a day. I know a lot of PHP developers feel very negative about Microsoft and Windows specifically. Well, Internet Explorer 6 specifically, but Windows is not better either. But that is something what you would care if this was an infrastructure service.
 
-Azure+ is Platform as a Service or [PaaS](http://en.wikipedia.org/wiki/Platform_as_a_service) in short. What that means, that you deploy apps to a cloud black box and the infrastructure it is running is completely irrelevant to you. There is more work to be completed to making it truly PaaS, but our goal is that deploying to this service is completely headache-free and everything just works\*.
+Azure+ is Platform as a Service or [PaaS](http://en.wikipedia.org/wiki/Platform_as_a_service) in short. What that means is that you deploy apps to a cloud black box and the infrastructure it is running is completely irrelevant to you. There is more work to be completed to making it truly PaaS, but our goal is to make deploying to this service completely headache-free and to just make everything work\*.
 
 Important fact to note, this is not developed under any collaboration or affiliation with Microsoft and thus it's our own decisions on where we'll take it from here. I think PHP support on Windows is as good as on any other OS and all the PHP apps I tried (Zend Framework, Symfony2, Lithium) worked pretty much out of the box.
 
@@ -41,9 +41,9 @@ Important fact to note, this is not developed under any collaboration or affilia
 
 <div class="alignright" ><img src="/media/toys.gif" alt="Toys" class="noborder"></div>
 
-First of all, PHP developers start writing PHP code, because to start learning PHP you only need a Apache installed and that's it. Hack on some code, click refresh and you see the result. That's what PHP is. That's why at least 15 minutes of wait is just something PHP developer wouldn't want to do. We made it faster. How about 5 sec. or less deployment time?
+First of all, PHP developers start by writing PHP code, because to start learning PHP you only need a Apache installed and that's it. Hack on some code, click refresh and you see the result. That's what PHP is. That's why at least 15 minutes of wait is just something PHP developer wouldn't want to do. We made it faster. How about 5 sec. or less deployment time?
 
-Furthermore, in core we have mechanisms which allows to support and change PHP configuration and version in the same short time. So you can try different PHP versions in a matter of one mouse click or switch off `display_errors` when your app is ready to live. Currently you can only choose from two PHP versions and error reporting mode, but there is more coming.
+Furthermore, in core we have mechanisms which allows us to support and change PHP configuration and version in the same short time. So you can try different PHP versions in a matter of one mouse click or switch off `display_errors` when your app is ready to live. Currently you can only choose from two PHP versions and error reporting mode, but there is more to come.
 
 Speed of deployments and configuration freedom is a good building base to start with. But there is more baked in, like an API which allows pushing code directly and a service which will pull from a specified Git repository automatically. Right now we are working on adding MySQL support, so you can port pretty much any existing app. It's a great core platform which allows adding new functionality very very easily.
 
@@ -51,7 +51,7 @@ Speed of deployments and configuration freedom is a good building base to start 
 
 <div class="alignleft" ><img src="/media/azureplusisgood.jpg" alt="Azure+ is good" class="noborder"></div>
 
-It was an unbelievable journey so far and we learned insane amount of things about Azure itself and how to make PHP deployments blazing fast. Some things required hours to tackle, but in the end we made sure our users are never going to have to deal with them. And believe me, there are **a lot** of things you can shoot yourself with when working with Windows.
+It was an unbelievable journey so far and we learned insane amount of things about Azure itself and how to make PHP deployments blazing fast. Some things required hours to tackle, but in the end we made sure that our users are never going to have to deal with them. And believe me, there are **a lot** of things you can shoot yourself with when working with Windows.
 
 This is a project which needs feedback and especially from people who know PHP, cloud stack etc. really well. I was running demos and giving access to some people I know and, I think, they were really impressed with the stack. Also because it relies heavily on Microsoft stack, I had spent past two weeks demoing it to a selected group of Microsoft friends and so far reception was amazing. To quote one:
 
