@@ -15,7 +15,7 @@ We built a cloud platform for PHP. Yep, you heard it correctly. We see a huge op
 
 <!--more-->
 
-We call it [Azure+](http://cloud.webspecies.co.uk/). Similarly to C++ relation to C, Azure+ is Azure done right and useable. This is a code name though, which might change once this goes to production. As will design, which currently works as a good basis and is based on the great [Twitter's Bootstrap](http://twitter.github.com/bootstrap/) framework. 
+We call it [Azure+](http://cloud.webspecies.co.uk/). Similarly to C++ relation to C, Azure+ is Azure done right and useble. This is a code name though, which might change once this goes to production. As will the design, which currently works as a good basis and is based on the great [Twitter Bootstrap](http://twitter.github.com/bootstrap/) framework. 
 
 ### Why Azure?
 
