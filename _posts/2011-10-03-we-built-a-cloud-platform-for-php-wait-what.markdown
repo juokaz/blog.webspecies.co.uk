@@ -11,11 +11,11 @@ categories:
 - Cloud
 ---
 
-We built a cloud platform for PHP. Yep, you heard it correctly. We see a huge opportunity in the market and are willing to work hard to make deploying PHP projects very easy. However this is a different one and here are the story behind it and what it can do for you.
+We built a cloud platform for PHP. Yep, you heard it correctly. We see a huge opportunity in the market and are willing to work hard to make deploying PHP projects very easy. However this is a different one and here is the story behind it and what it can do for you.
 
 <!--more-->
 
-We call it <a href="http://cloud.webspecies.co.uk/">Azure+</a>. Similarly to C++ relation to C, Azure+ is Azure done right and useable. This is a code name though, which might change once this goes to production. As will design, which currently works as a good basis and is based on the great Twitter's Bootstrap framework. 
+We call it [Azure+](http://cloud.webspecies.co.uk/). Similarly to C++ relation to C, Azure+ is Azure done right and useable. This is a code name though, which might change once this goes to production. As will design, which currently works as a good basis and is based on the great [Twitter's Bootstrap](http://twitter.github.com/bootstrap/) framework. Though we are not sure if it ever will, this is currently a technical playground. 
 
 ### Why Azure?
 
@@ -61,4 +61,4 @@ I think this is a great achievement for PHP community too, because a lot of the 
 
 ### Conclusion
 
-Currently a group of 15 or so people is actively testing this and is sending us valuable feedback. Nevertheless it's quite close to production-quality service and you'll hear more about it very soon. If you feel like you'd like to test this (completely free of charge) and would be able to provide some good thoughts, feel welcome to write to me. You can find more details about Azure+ <a href="http://cloud.webspecies.co.uk/">here</a>.
+Currently a group of 15 or so people is actively testing this and is sending us valuable feedback. Nevertheless it's quite close to production-quality service and you'll hear more about it very soon. If you feel like you'd like to test this (completely free of charge) and would be able to provide some good thoughts, feel welcome to write to me. You can find more details about Azure+ [here](http://cloud.webspecies.co.uk/).
