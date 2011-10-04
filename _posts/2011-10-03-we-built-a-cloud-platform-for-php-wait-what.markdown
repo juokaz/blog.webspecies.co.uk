@@ -19,7 +19,7 @@ We call it [Azure+](http://cloud.webspecies.co.uk/). Similarly to C++ relation t
 
 ### Why Azure?
 
-<div class="alignright" ><img src="/media/azure.png" alt="Azure"><p class="wp-caption-text">Current workflow with Azure, original from <a href="XKCD">http://xkcd.com/303/</a></p></div>
+<div class="alignright" ><img src="/media/azure.png" alt="Azure"><p class="wp-caption-text">Current workflow with Azure, original from <a href="http://xkcd.com/303/">XKCD</a></p></div>
 
 There is nothing specific about [Azure](http://en.wikipedia.org/wiki/Azure_Services_Platform) that we wanted to leverage, but because so many existing PaaS providers are built on Amazon cloud it just made sense to try something else. Furthermore, I have a lot of experience with Windows and PHP so it all felt like a good plan. I think we are awesome enough to make Azure rock for PHP, because...
 
