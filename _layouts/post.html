@@ -2,66 +2,66 @@
 layout: default
 ---
 
-<div class="post single hentry" id="post"> 
+<div class="post single hentry" id="post">
     <a name="post"></a>
-        <div class="postContent"> 
-        <h3 class="entry-title" id="title"><a href="{{ page.url }}">{{ page.title }}</a></h3> 
-        <h4 class="vcard author">by <span class="fn"><a href="#author">{{ page.author }}</a></span></h4> 
-        <div class="entry-content"> 
+        <div class="postContent">
+        <h3 class="entry-title" id="title"><a href="{{ page.url }}">{{ page.title }}</a></h3>
+        <h4 class="vcard author">by <span class="fn"><a href="#author">{{ page.author }}</a></span></h4>
+        <div class="entry-content">
           {{ content }}
-        </div> 
-    </div> 
-    <div class="postMeta"> 
+        </div>
+    </div>
+    <div class="postMeta">
         <div class="author">
             <a name="author"></a>
             <span>Author:</span>
-            {{ page.author | author }}
+            {% include author_juozas.html %}
         </div>
-              
+
         <div class="meta">
             <div class="postDate">
                 <span>Published:</span> <abbr class="published" title="2008-09-22T18:59:02+0000"><a href="http://demo.jimbarraud.com/manifest/2008/09/22/">{{ page.date | date:"%B %d, %Y @ %H:%M" }}</a></abbr>
-            </div> 
-          
+            </div>
+
         	<div class="categories">
-            	<span>Filed Under:</span> 
+            	<span>Filed Under:</span>
             	{% for c in page.categories %}
 	                <a href="/categories/{{ c | replace:' ', '-' | downcase }}.html" rel="category">{{ c }}</a>{% if forloop.last == false %}, {% endif %}
                 {% endfor %}
-            </div> 
-            
-        	<span>Tags:</span> 
+            </div>
+
+        	<span>Tags:</span>
         	{% for t in page.tags %}
 	            <a href="/tags/{{ t | replace:' ', '-' | downcase }}.html" rel="tag">{{ t }}</a>{% if forloop.last == false %}, {% endif %}
-            {% endfor %} 	
+            {% endfor %}
         </div>
-    </div> 
-        
+    </div>
+
     <div class="social">
         <div class="rsssubcribe">
             <a href="http://feeds.feedburner.com/WebSpeciesBlog"><img src="/images/rss.png" class="noborder rss" alt="RSS" /></a>
             Subcribe to <a href="http://feeds.feedburner.com/WebSpeciesBlog">RSS feed</a> to receive all the new posts directly to your reader
         </div>
-        
+
         <div class="share">
             <a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="webspecies" data-related="juokaz">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-            
+
             <g:plusone size="tall"></g:plusone>
-            
+
             <iframe src="http://www.facebook.com/plugins/like.php?href={{ "http://blog.webspecies.co.uk" | cgi_escape }}{{ page.url | cgi_escape }}&amp;send=false&amp;layout=box_count&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=90" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:50px; height:60px;" allowTransparency="true"></iframe>
-            
-            <script type="text/javascript"> 
+
+            <script type="text/javascript">
                 var dzone_url = 'http://blog.webspecies.co.uk{{ page.url }}', dzone_title = '{{ page.title }}', dzone_style = '1';
             </script>
             <script language="javascript" src="http://widgets.dzone.com/widgets/zoneit.js"></script>
         </div>
     </div>
-</div> 
+</div>
 
 <script type="text/javascript">
 document.getElementById('post').scrollIntoView();
 </script>
- 
+
 <div id="comments">
 
 <div id="disqus_thread"></div>
@@ -70,7 +70,7 @@ document.getElementById('post').scrollIntoView();
     var disqus_shortname = 'webspeciesblog';
     var disqus_identifier = '{{ page.id }}';
     var disqus_url = 'http://blog.webspecies.co.uk/{{ page.url }}';
-    
+
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
