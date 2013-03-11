@@ -20,19 +20,19 @@ layout: default
 
         <div class="meta">
             <div class="postDate">
-                <span>Published:</span> <abbr class="published" title="2008-09-22T18:59:02+0000"><a href="http://demo.jimbarraud.com/manifest/2008/09/22/">{{ page.date | date:"%B %d, %Y @ %H:%M" }}</a></abbr>
+                <span>Published:</span> <abbr class="published" title="2008-09-22T18:59:02+0000">{{ page.date | date:"%B %d, %Y @ %H:%M" }}</abbr>
             </div>
 
         	<div class="categories">
             	<span>Filed Under:</span>
             	{% for c in page.categories %}
-	                <a href="/categories/{{ c | replace:' ', '-' | downcase }}.html" rel="category">{{ c }}</a>{% if forloop.last == false %}, {% endif %}
+	                {{ c }}{% if forloop.last == false %}, {% endif %}
                 {% endfor %}
             </div>
 
         	<span>Tags:</span>
         	{% for t in page.tags %}
-	            <a href="/tags/{{ t | replace:' ', '-' | downcase }}.html" rel="tag">{{ t }}</a>{% if forloop.last == false %}, {% endif %}
+	            {{ t }}{% if forloop.last == false %}, {% endif %}
             {% endfor %}
         </div>
     </div>
